@@ -1,0 +1,89 @@
+{
+  "name": "stm-tool",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps",
+    "Drivers/STM32F0xx_HAL_Driver/Src",
+    "Core/Src",
+    "Core/APP",
+    "Core/DEBUG",
+    "Core/LIB/iqmathlib/Src",
+    "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src",
+    "USB_DEVICE/App",
+    "USB_DEVICE/Target",
+    "Middlewares/ST/STM32_USB_Device_Library/Core/Src",
+    "Core/LIB/letter-shell"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [
+      {
+        "path": "startup_stm32f072xb.s"
+      }
+    ],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "3cc586b83be39f5c1a0597ce2ec2ee66"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M0",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "STM32F072CBUx_FLASH.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "ST",
+          "cpuName": "STM32F072CB (allow opt. bytes)"
+        },
+        "proType": 1,
+        "speed": 2000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".eide/deps",
+          "Core/Inc",
+          "Drivers/CMSIS/Device/ST/STM32F0xx/Include",
+          "Drivers/CMSIS/Include",
+          "Drivers/STM32F0xx_HAL_Driver/Inc",
+          "Drivers/STM32F0xx_HAL_Driver/Inc/Legacy",
+          "Core/APP",
+          "Core/DEBUG",
+          "Core/LIB/iqmathlib/Inc",
+          "USB_DEVICE/App",
+          "USB_DEVICE/Target",
+          "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+          "Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+          "Core/LIB/letter-shell"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32F072xB"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
