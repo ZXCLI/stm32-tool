@@ -18,8 +18,6 @@ void MY_Init(void)
 
     CAN_Filter_Config();
     CAN_Start();
-    // HAL_ADCEx_Calibration_Start(&hadc1);                               		// 校准ADC
-    // HAL_Delay(2);
 
     key_init();
 }

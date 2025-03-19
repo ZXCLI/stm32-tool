@@ -125,7 +125,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    CAN_Send(0x123, test, 2);
+    //CAN_Send(0x123, test, 2);
     RUN_UI();
     USRshellRUN();
  
